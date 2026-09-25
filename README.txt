@@ -1,15 +1,15 @@
-DYSONPLUS REPARACIÓN SERVICIO TÉCNICO EN VITORIA
-================================================
+DYSONRESTORE REPARACIÓN SERVICIO TÉCNICO EN ELCHE
+=================================================
 
 Web de una sola página (HTML/CSS/JS estático + función serverless en Vercel)
-para DysonPlus, servicio técnico y reparación de equipos Dyson con recogida
-y entrega en Vitoria y área metropolitana.
+para DysonRestore, servicio técnico y reparación de equipos Dyson con recogida
+y entrega en Elche y área metropolitana.
 
-Dominio: https://vitoriaserviciotecnico.com.es/
-Marca: DysonPlus Reparación Servicio Técnico en Vitoria
-Nombre corto (og:site_name): DyPlus – Vitoria
-Ficha de Google: https://maps.app.goo.gl/Xfr1FR4jZDQwqnk69
-Mapa: iframe de Google Maps de la ficha "DysonPlus Reparación Servicio Técnico",
+Dominio: https://elcheserviciotecnico.com.es/
+Marca: DysonRestore Reparación Servicio Técnico en Elche
+Nombre corto (og:site_name): DysonRestore – Elche
+Ficha de Google: https://maps.app.goo.gl/gNwqvtLq8mgjmR9s9
+Mapa: iframe de Google Maps de la ficha "DysonRestore Reparación Servicio Técnico",
 insertado tal cual en la sección de contacto (ancho 100% vía CSS).
 
 DATOS DE CONTACTO
@@ -20,9 +20,9 @@ DATOS DE CONTACTO
 - Horario: lunes a viernes de 09:30 a 18:00.
 - Política de privacidad: https://kelatos.com/privacy-policy/.
 
-DIRECCIÓN: no se muestra dirección postal. La web indica "Vitoria y área
+DIRECCIÓN: no se muestra dirección postal. La web indica "Elche y área
 metropolitana" y servicio de recogida y entrega; el taller está en Madrid.
-Si se confirma una dirección en Vitoria, añadirla al hero, footer y JSON-LD.
+Si se confirma una dirección en Elche, añadirla al hero, footer y JSON-LD.
 
 ESTRUCTURA
 - index.html: toda la página (hero, ventajas, reparación rápida, confianza,
@@ -30,22 +30,24 @@ ESTRUCTURA
   SEO, footer, cookies y JSON-LD).
 - style.css: base de la plantilla.
 - mobile-navigation.css, social-footer.css, cal-booking.css: ajustes compartidos.
-- dysonplus.css: identidad visual de la marca (una sola capa, sin
+- dysonrestore.css: identidad visual de la marca (una sola capa, sin
   sobrescrituras en cascada).
-- dysonplus-header-hero.css: cabecera grafito con logotipo blanco.
-- dysonplus.js: menú móvil (se cierra al pulsar un enlace), formulario y
-  preferencias de cookies (clave localStorage "dysonplus_cookie_preference").
-- dysonplus-n8n-chat.js / .css: chatbot n8n con webhook compartido del grupo
+- dysonrestore-header-hero.css: cabecera grafito con logotipo blanco.
+- dysonrestore.js: menú móvil (se cierra al pulsar un enlace), formulario y
+  preferencias de cookies (clave localStorage "dysonrestore_cookie_preference").
+- dysonrestore-n8n-chat.js / .css: chatbot n8n con webhook compartido del grupo
   y botón de respaldo.
 - api/contacto.js: envío del formulario por SMTP (variables SMTP_HOST,
   SMTP_PORT, SMTP_SECURE, SMTP_USER, SMTP_PASS y CONTACT_EMAIL en Vercel).
 - img/: isotipo, patrón e ilustraciones SVG de la marca.
-- robots.txt y sitemap.xml apuntan a https://vitoriaserviciotecnico.com.es/.
+- robots.txt y sitemap.xml apuntan a https://elcheserviciotecnico.com.es/.
 
-PALETA: fucsia eléctrico, grafito y gris níquel (inspirada en las gamas premium níquel/fucsia).
-- Primario fucsia #C2185B · oscuro #9C1248 · muy oscuro #5E0B2C
-- Grafito (cabecera, footer, cookies, tarjeta de Google) #16161A
-- Rosa claro #FF6FA8 para detalles sobre fondo oscuro (logotipo, destacados)
-- Gris níquel #B8BCC4 en ilustraciones · fondos #F6F5F7
+PALETA: lima eléctrica, grafito y gris acero (estética tecnológica).
+- Lima #9BD60A · oscuro #7FB305 · oliva muy oscuro #2F4A06 (franja superior, sección oscura)
+- Lima de texto #4D7C0F para títulos en cursiva, enlaces e iconos sobre fondo claro
+- Texto negro #141619 sobre botones lima (el blanco sobre lima no es legible)
+- Grafito #141619 (cabecera, footer, cookies, tarjeta de Google, botón de teléfono y chat)
+- El botón de teléfono y el del chat van en grafito con detalle lima para no
+  confundirse con el verde de WhatsApp.
 Excepciones: WhatsApp conserva su verde y YouTube su rojo corporativo.
 En móvil (≤720px) no se muestran las ilustraciones laterales del hero.
